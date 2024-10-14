@@ -104,3 +104,16 @@ done
 ```
 
 12. **Opção Inválida**: Caso o usuário insira um número diferente das opções disponíveis (1 a 6), o programa exibe uma mensagem de erro indicando que a opção é inválida.
+
+# Como Executar o Script
+
+1. **Salvar o arquivo**: Crie um arquivo chamado `calculadora.sh` e cole o código acima.
+2. **Tornar o arquivo executável**: Altere as permissões do arquivo para torná-lo executável com o seguinte comando:
+```
+chmod +x calculadora.sh
+```
+3. **Executar o script**: Para rodar o script, use o comando:
+```
+./calculadora.sh
+```
+4.**Interagir com a calculadora**: Digite os dois números e escolha a operação desejada. A calculadora exibirá o resultado e permitirá que você realize mais operações até escolher a opção de sair.
