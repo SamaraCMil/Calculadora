@@ -27,4 +27,26 @@ while True:
     print("5. Potenciação")       # Opção 5: Potenciação
     print("6. Sair")              # Opção 6: Encerrar o programa
 ```
+- Explicação: Ao selecionar a opção "6", o programa imprime uma mensagem de despedida e interrompe o loop com o comando break, encerrando o funcionamento da calculadora.
+
+3. **Exibição do menu de operações**: O programa exibe um menu com cinco opções de operações matemáticas (adição, subtração, multiplicação, divisão, potenciação) e uma opção de saída.
+python
+```
+    # Recebendo a opção do usuário
+    opcao = input("Digite o número da operação desejada: ")  # O usuário escolhe a operação
+```
+4. **Escolha da operação**: O usuário escolhe qual operação matemática deseja realizar inserindo o número correspondente.
+```
+  # Realizando a operação escolhida
+    if opcao == "1":  # Caso o usuário escolha adição
+        resultado = num1 + num2  # Realiza a adição dos dois números
+        print("O resultado da adição é:", resultado)  # Exibe o resultado da adição
+    elif opcao == "2":  # Caso o usuário escolha subtração
+        resultado = num1 - num2  # Realiza a subtração dos dois números
+        print("O resultado da subtração é:", resultado)  # Exibe o resultado da subtração
+    elif opcao == "3":  # Caso o usuário escolha multiplicação
+        resultado = num1 * num2  # Realiza a multiplicação dos dois números
+        print("O resultado da multiplicação é:", resultado)  # Exibe o resultado da multiplicação
+
+```
 
