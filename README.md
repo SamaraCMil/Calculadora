@@ -65,4 +65,42 @@ do
             echo "O resultado da multiplicação é: $resultado"
             ;;
 ```
-8. **Multiplicação**: A multiplicação de num1 por num2 é realizada e o resultado é mostrado.
+8. **Multiplicação**: A multiplicação de `num1` por `num2` é realizada e o resultado é mostrado.
+```
+        4)
+            if [ "$num2" != "0" ]; then
+                resultado=$(echo "$num1 / $num2" | bc)
+                echo "O resultado da divisão é: $resultado"
+            else
+                echo "Erro: Divisão por zero não é permitida."
+            fi
+            ;;
+
+```
+9. **Divisão**: Verifica se o divisor (`num2`) é diferente de zero antes de realizar a divisão. Caso contrário, exibe uma mensagem de erro indicando que a divisão por zero não é permitida.
+```
+        5)
+            resultado=$(echo "$num1 ^ $num2" | bc)
+            echo "O resultado da potenciação é: $resultado"
+            ;;
+
+```
+10. **Potenciação**: O programa calcula `num1` elevado à potência de `num2` e exibe o resultado.
+```
+        6)
+            echo "Saindo da calculadora."
+            break
+            ;;
+
+```
+
+11. **Sair**: Se o usuário escolher a opção 6, o programa encerra o loop e exibe a mensagem "Saindo da calculadora".
+```
+        *)
+            echo "Opção inválida."
+            ;;
+    esac
+done
+```
+
+12. **Opção Inválida**: Caso o usuário insira um número diferente das opções disponíveis (1 a 6), o programa exibe uma mensagem de erro indicando que a opção é inválida.
